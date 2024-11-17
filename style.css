@@ -1,0 +1,167 @@
+header, main, footer {
+    width: 100%;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: rgb(255, 255, 255);
+}
+main{
+    color: black;
+    font-style: italic;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: gre;
+    font-size: 1rem; /* Базовый размер шрифта */
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(215, 215, 215);
+    color: azure;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(215, 215, 215);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 30px;
+    margin-top: 60px;
+
+    .footer__vrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 30px;
+        margin-top: 60px;
+    
+     
+        
+    }
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+.card-body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.btn btn-primary{
+    color: black;
+    background-color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(215, 215, 215);
+}
+
+body {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
+}
+
+
+@media screen and (min-width: 768px) {
+    header, main, footer {
+        width: 100%;
+    }
+    .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        
+        flex-direction:row; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрируем элементы по горизонтали */
+    }
+    footer {
+        
+        flex-direction:row; /* Вертикальное расположение элементов */
+        align-items: center;
+    }
+
+    
+    nav {
+       
+        margin: 10px 0; /* Добавляем отступы между элементами навигации */
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #logo {
+        width: 80px; /* Уменьшаем размер логотипа */
+        height: 80px;
+    }
+
+    .table-section {
+       order: 1;
+        flex-basis: 100%; /* Элементы занимают всю ширину */
+        margin: 0; /* Убираем отступы */
+    }
+    .links-section{
+        order:0;
+        flex-basis: 100%; /* Элементы занимают всю ширину */
+        margin: 0; /* Убираем отступы */
+
+    }
+    body {
+        font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
+    }
+   
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    input, select {
+        margin-bottom: 10px;
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+}
